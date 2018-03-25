@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "npm module generator with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -14,7 +14,10 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
@@ -26,8 +29,7 @@
     "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
     "watch": "npm-watch",
-    "patch":
-      "npm run changelog && git add . --all && git commit -m 'patch version' && npm version patch && npm publish",
+    "patch": "npm run changelog && git add . --all && git commit -m 'patch version' && npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run lint && npm test && npm run build",
@@ -42,7 +44,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["boilerplate, module, npm module boilerplate"],
+  "keywords": [
+    "boilerplate, module, npm module boilerplate"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
