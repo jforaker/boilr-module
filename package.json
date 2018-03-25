@@ -27,7 +27,7 @@
     "build": "babel src -d dist",
     "watch": "npm-watch",
     "patch":
-      "npm run changelog && git commit -m 'update changelog' && npm version patch && npm publish",
+      "npm run changelog && git add . --all && git commit -m 'patch version' && npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run lint && npm test && npm run build",
