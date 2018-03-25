@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "npm module generator with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -14,12 +14,14 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
-    "changelog":
-      "node ./scripts/changelog && git add . --all && git commit -m 'changelog_ _'",
+    "changelog": "node ./scripts/changelog && git add . --all && git commit -m 'changelog_ _'",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "lint": "eslint src test",
     "docs": "documentation readme src --section=DOCS",
@@ -27,8 +29,7 @@
     "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
     "watch": "npm-watch",
-    "patch":
-      "npm run changelog && npm version patch && git rebase -i HEAD~2 && npm publish",
+    "patch": "npm run changelog && npm version patch && git rebase -i HEAD~2 && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run lint && npm test && npm run build",
@@ -43,7 +44,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["boilerplate, module, npm module boilerplate"],
+  "keywords": [
+    "boilerplate, module, npm module boilerplate"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
