@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "npm module generator with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -25,7 +25,8 @@
     "docs": "documentation readme src --section=DOCS",
     "clean": "rimraf dist",
     "prebuild": "npm run docs && npm run clean",
-    "gitPrep": "npm run changelog && git rebase HEAD~1",
+    "gitPrep":
+      "npm run changelog && git reset --soft HEAD^1 && git commit --amend",
     "build": "babel src -d dist",
     "watch": "npm-watch",
     "patch": "npm run gitPrep && npm version patch && npm publish",

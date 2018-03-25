@@ -1,3 +1,12 @@
+<a name"v0.0.15"></a>
+### v0.0.15 (2018-03-25)
+
+
+#### Other Changes
+
+* changelog ([62df9cb6](https://github.com/jforaker/boilr-module/commit/62df9cb6))
+* remove superfluous npm publish script ([11385e5b](https://github.com/jforaker/boilr-module/commit/11385e5b))
+
 <a name"v0.0.14"></a>
 ### v0.0.14 (2018-03-25)
 
