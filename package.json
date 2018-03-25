@@ -14,10 +14,7 @@
   "engines": {
     "node": ">=6"
   },
-  "files": [
-    "dist",
-    "index.js"
-  ],
+  "files": ["dist", "index.js"],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
@@ -29,7 +26,8 @@
     "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
     "watch": "npm-watch",
-    "patch": "npm run changelog && npm version patch && npm publish",
+    "patch":
+      "npm run changelog && git commit -m 'update changelog' && npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run lint && npm test && npm run build",
@@ -44,9 +42,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": [
-    "npm-module-generator"
-  ],
+  "keywords": ["npm-module-generator"],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
