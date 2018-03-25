@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "npm module generator with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -14,7 +14,10 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
@@ -41,7 +44,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["npm-module-generator"],
+  "keywords": [
+    "npm-module-generator"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
