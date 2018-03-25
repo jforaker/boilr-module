@@ -1,3 +1,12 @@
+<a name"v0.0.9"></a>
+### v0.0.9 (2018-03-25)
+
+
+#### Other Changes
+
+* patch version ([9f953dbf](https://github.com/jforaker/boilr-module/commit/9f953dbf))
+* update keywords ([6ffb9c0f](https://github.com/jforaker/boilr-module/commit/6ffb9c0f))
+
 <a name"v0.0.8"></a>
 ### v0.0.8 (2018-03-25)
 
