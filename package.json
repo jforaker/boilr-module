@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "npm module generator with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
