@@ -23,7 +23,7 @@
     "lint": "eslint src test",
     "docs": "documentation readme src --section=DOCS",
     "clean": "rimraf dist",
-    "postinstall": "rimraf CHANGELOG.md",
+    "postinstall": "rimraf CHANGELOG.md && touch CHANGELOG.md",
     "prebuild": "npm run docs && npm run clean",
     "gitPrep":
       "npm run changelog && git add . --all && git commit -m 'update changelog' && git reset --soft HEAD~1 && git commit --allow-empty-message -m ''",
