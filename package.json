@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "npm module boilerplate with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -14,7 +14,10 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
@@ -25,8 +28,7 @@
     "clean": "rimraf dist",
     "postinstall": "rimraf CHANGELOG.md && touch CHANGELOG.md",
     "prebuild": "npm run docs && npm run clean",
-    "gitPrep":
-      "npm run changelog && git add . --all && git commit -m 'update changelog' && git reset --soft HEAD~1 && git commit --allow-empty-message -m ''",
+    "gitPrep": "npm run changelog && git add . --all && git commit -m 'update changelog' && git reset --soft HEAD~1 && git commit --allow-empty-message -m ''",
     "build": "babel src -d dist",
     "watch": "npm-watch",
     "patch": "npm run gitPrep && npm version patch && npm publish",
@@ -44,7 +46,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["boilerplate, module, package, npm"],
+  "keywords": [
+    "boilerplate, module, package, npm"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
