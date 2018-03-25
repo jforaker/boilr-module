@@ -43,7 +43,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["boilerplate, module, npm module boilerplate"],
+  "keywords": ["boilerplate, module, package, npm"],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
