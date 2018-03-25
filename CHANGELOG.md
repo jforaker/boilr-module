@@ -1,3 +1,12 @@
+<a name"v0.0.14"></a>
+### v0.0.14 (2018-03-25)
+
+
+#### Other Changes
+
+* changelog ([c5cf64c3](https://github.com/jforaker/boilr-module/commit/c5cf64c3))
+* add gitPrep script ([b513fec0](https://github.com/jforaker/boilr-module/commit/b513fec0))
+
 <a name"v0.0.13"></a>
 ### v0.0.13 (2018-03-25)
 
