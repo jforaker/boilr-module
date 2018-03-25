@@ -1,3 +1,11 @@
+<a name"v0.0.19"></a>
+### v0.0.19 (2018-03-25)
+
+
+#### Other Changes
+
+* update changelog ([e1e659ce](https://github.com/jforaker/boilr-module/commit/e1e659ce))
+
 <a name"v0.0.18"></a>
 ### v0.0.18 (2018-03-25)
 
