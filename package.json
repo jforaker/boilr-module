@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "npm module generator with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -14,12 +14,14 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
-    "changelog":
-      "node ./scripts/changelog && git add . --all && git reset --soft HEAD~1 && git commit -m 'changelog_'",
+    "changelog": "node ./scripts/changelog && git add . --all && git reset --soft HEAD~1 && git commit -m 'changelog_'",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "lint": "eslint src test",
     "docs": "documentation readme src --section=DOCS",
@@ -42,7 +44,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["boilerplate, module, npm module boilerplate"],
+  "keywords": [
+    "boilerplate, module, npm module boilerplate"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
