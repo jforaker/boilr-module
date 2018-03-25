@@ -14,14 +14,12 @@
   "engines": {
     "node": ">=6"
   },
-  "files": [
-    "dist",
-    "index.js"
-  ],
+  "files": ["dist", "index.js"],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
-    "changelog": "node ./scripts/changelog && git add . --all && git commit -m 'changelog_ _'",
+    "changelog":
+      "node ./scripts/changelog && git add . --all && git commit -m 'changelog_ _'",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "lint": "eslint src test",
     "docs": "documentation readme src --section=DOCS",
@@ -29,7 +27,8 @@
     "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
     "watch": "npm-watch",
-    "patch": "npm run changelog && git rebase -i HEAD~2 && npm version patch && npm publish",
+    "patch":
+      "npm run changelog && git rebase HEAD~2 && npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run lint && npm test && npm run build",
@@ -44,9 +43,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": [
-    "boilerplate, module, package, npm"
-  ],
+  "keywords": ["boilerplate, module, package, npm"],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
