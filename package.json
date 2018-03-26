@@ -14,15 +14,13 @@
   "engines": {
     "node": ">=6"
   },
-  "files": [
-    "dist",
-    "index.js"
-  ],
+  "files": ["dist", "index.js"],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
     "changelog": "node ./scripts/changelog",
     "postcoverage": "opn coverage/lcov-report/index.html",
+    "postinstall": "npm run build",
     "lint": "eslint src test",
     "docs": "documentation readme src --section=DOCS",
     "clean": "rimraf dist",
@@ -33,7 +31,6 @@
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run lint && npm test && npm run build",
-    "version": "",
     "postversion": "git push && git push --tags"
   },
   "watch": {
@@ -44,9 +41,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": [
-    "boilerplate, module, package, npm"
-  ],
+  "keywords": ["boilerplate, module, package, npm"],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
