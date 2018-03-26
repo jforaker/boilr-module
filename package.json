@@ -14,10 +14,7 @@
   "engines": {
     "node": ">=6"
   },
-  "files": [
-    "dist",
-    "index.js"
-  ],
+  "files": ["dist", "index.js"],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
@@ -26,7 +23,6 @@
     "lint": "eslint src test",
     "docs": "documentation readme src --section=DOCS",
     "clean": "rimraf dist",
-    "postinstall": "rimraf CHANGELOG.md && touch CHANGELOG.md",
     "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
     "watch": "npm-watch",
@@ -45,9 +41,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": [
-    "boilerplate, module, package, npm"
-  ],
+  "keywords": ["boilerplate, module, package, npm"],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -66,6 +60,6 @@
     "npm-watch": "^0.3.0",
     "opn-cli": "^3.1.0",
     "prettier": "^1.10.2",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.2"
   }
 }
