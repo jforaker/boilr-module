@@ -58,6 +58,6 @@ This function says hello.
 
 **Parameters**
 
--   `name`  Some name to say hello for.
+-   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** a name to say hello to. (optional, default `'derf'`)
 
-Returns **any** The hello.
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the greeting.
