@@ -1,6 +1,6 @@
 {
   "name": "boilr-module",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "npm module boilerplate with nice configs",
   "license": "MIT",
   "repository": "jforaker/boilr-module",
@@ -14,7 +14,10 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "index.js"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
@@ -42,7 +45,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["boilerplate, module, package, npm"],
+  "keywords": [
+    "boilerplate, module, package, npm"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
